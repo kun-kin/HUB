@@ -667,8 +667,8 @@ body#home .header-wrap {
 @media (max-width: 991px) {
   .hex1 {
     top: 20%;
-    width: 240px;
-    height: 240px;
+    /*width: 240px;
+    height: 240px;*/
   }
   .hex2 {
     top: 53%;
@@ -684,20 +684,22 @@ body#home .header-wrap {
   }
 }
 @media (max-width: 768px) {
-  .hex1 {
-    width: 210px;
-    height: 210px;
-    font-size: 14px;
-    line-height: 16px;
-  }
-  .hex1 .hexagon__text-title {
-    font-size: 14px;
-    line-height: 16px;
-  }
-  .hex1 .hexagon__text-title strong {
-    font-size: 28px;
-    line-height: 29px;
-    display: block;
+  .hex {
+    /*&1 {
+        width: 210px;
+        height: 210px;
+        font-size: 14px;
+        line-height: 16px;
+        .hexagon__text-title {
+            font-size: 14px;
+            line-height: 16px;
+            strong {
+                font-size: 28px;
+                line-height: 29px;
+                display: block;
+            }
+        }
+    }*/
   }
   .hex2 {
     left: 25%;
@@ -713,9 +715,11 @@ body#home .header-wrap {
   }
 }
 @media (max-width: 576px) {
-  .hex1 {
-    width: 180px;
-    height: 180px;
+  .hex {
+    /*&1 {
+        width: 180px;
+        height: 180px;
+    }*/
   }
   .hex2 {
     width: 140px;
