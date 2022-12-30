@@ -495,130 +495,106 @@ body#home {
             }
         }
     }
+    &.hex-style1 {
+        width: 175px;
+        height: 175px;
+    }
+    &.hex-style2 {
+        width: 120px;
+        height: 120px;
+    }
     &2 {
         position: absolute;
-        width: 175px;
-        height: 174px;
         top: 20%;
         left: 36%;
         transform: translate(-50%, -50%);
     }
     &10 {
         position: absolute;
-        width: 175px;
-        height: 174px;
         top: 20%;
         right: 36%;
         transform: translate(50%, -50%);
     }
     &3 {
         position: absolute;
-        width: 175px;
-        height: 174px;
         top: 35%;
         left: 25%;
         transform: translate(-50%, -50%);
     }
     &11 {
         position: absolute;
-        width: 175px;
-        height: 174px;
         top: 35%;
         right: 25%;
         transform: translate(50%, -50%);
     }
     &4 {
         position: absolute;
-        width: 175px;
-        height: 174px;
         top: 50%;
         left: 36%;
         transform: translate(-50%, -50%);
     }
     &12 {
         position: absolute;
-        width: 175px;
-        height: 174px;
         top: 50%;
         right: 36%;
         transform: translate(50%, -50%);
     }
     &5 {
         position: absolute;
-        width: 120px;
-        height: 120px;
         top: 10%;
         left: 25%;
         transform: translate(-50%, -50%);
     }
     &13 {
         position: absolute;
-        width: 120px;
-        height: 120px;
         top: 10%;
         right: 25%;
         transform: translate(50%, -50%);
     }
     &6 {
         position: absolute;
-        width: 120px;
-        height: 120px;
         top: 20%;
         left: 16%;
         transform: translate(-50%, -50%);
     }
     &14 {
         position: absolute;
-        width: 120px;
-        height: 120px;
         top: 20%;
         right: 16%;
         transform: translate(50%, -50%);
     }
     &7 {
         position: absolute;
-        width: 120px;
-        height: 120px;
         top: 60%;
         left: 25%;
         transform: translate(-50%, -50%);
     }
     &15 {
         position: absolute;
-        width: 120px;
-        height: 120px;
         top: 60%;
         right: 25%;
         transform: translate(50%, -50%);
     }
     &8 {
         position: absolute;
-        width: 120px;
-        height: 120px;
         top: 75%;
         left: 32%;
         transform: translate(-50%, -50%);
     }
     &16 {
         position: absolute;
-        width: 120px;
-        height: 120px;
         top: 75%;
         right: 32%;
         transform: translate(50%, -50%);
     }
     &9 {
         position: absolute;
-        width: 120px;
-        height: 120px;
         top: 75%;
         left: 42%;
         transform: translate(-50%, -50%);
     }
     &17 {
         position: absolute;
-        width: 120px;
-        height: 120px;
         top: 75%;
         right: 42%;
         transform: translate(50%, -50%);
@@ -746,19 +722,7 @@ body#home {
             width: 180px;
             height: 180px;
         }*/
-        &2 {
-            width: 140px;
-            height: 140px;
-        }
-        &4 {
-            width: 140px;
-            height: 140px;
-        }
-        &10 {
-            width: 140px;
-            height: 140px;
-        }
-        &12 {
+        &.hex-style1 {
             width: 140px;
             height: 140px;
         }

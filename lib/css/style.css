@@ -466,130 +466,106 @@ body#home .header-wrap {
 .hex1 .hexagon__text-desc {
   display: block;
 }
+.hex.hex-style1 {
+  width: 175px;
+  height: 175px;
+}
+.hex.hex-style2 {
+  width: 120px;
+  height: 120px;
+}
 .hex2 {
   position: absolute;
-  width: 175px;
-  height: 174px;
   top: 20%;
   left: 36%;
   transform: translate(-50%, -50%);
 }
 .hex10 {
   position: absolute;
-  width: 175px;
-  height: 174px;
   top: 20%;
   right: 36%;
   transform: translate(50%, -50%);
 }
 .hex3 {
   position: absolute;
-  width: 175px;
-  height: 174px;
   top: 35%;
   left: 25%;
   transform: translate(-50%, -50%);
 }
 .hex11 {
   position: absolute;
-  width: 175px;
-  height: 174px;
   top: 35%;
   right: 25%;
   transform: translate(50%, -50%);
 }
 .hex4 {
   position: absolute;
-  width: 175px;
-  height: 174px;
   top: 50%;
   left: 36%;
   transform: translate(-50%, -50%);
 }
 .hex12 {
   position: absolute;
-  width: 175px;
-  height: 174px;
   top: 50%;
   right: 36%;
   transform: translate(50%, -50%);
 }
 .hex5 {
   position: absolute;
-  width: 120px;
-  height: 120px;
   top: 10%;
   left: 25%;
   transform: translate(-50%, -50%);
 }
 .hex13 {
   position: absolute;
-  width: 120px;
-  height: 120px;
   top: 10%;
   right: 25%;
   transform: translate(50%, -50%);
 }
 .hex6 {
   position: absolute;
-  width: 120px;
-  height: 120px;
   top: 20%;
   left: 16%;
   transform: translate(-50%, -50%);
 }
 .hex14 {
   position: absolute;
-  width: 120px;
-  height: 120px;
   top: 20%;
   right: 16%;
   transform: translate(50%, -50%);
 }
 .hex7 {
   position: absolute;
-  width: 120px;
-  height: 120px;
   top: 60%;
   left: 25%;
   transform: translate(-50%, -50%);
 }
 .hex15 {
   position: absolute;
-  width: 120px;
-  height: 120px;
   top: 60%;
   right: 25%;
   transform: translate(50%, -50%);
 }
 .hex8 {
   position: absolute;
-  width: 120px;
-  height: 120px;
   top: 75%;
   left: 32%;
   transform: translate(-50%, -50%);
 }
 .hex16 {
   position: absolute;
-  width: 120px;
-  height: 120px;
   top: 75%;
   right: 32%;
   transform: translate(50%, -50%);
 }
 .hex9 {
   position: absolute;
-  width: 120px;
-  height: 120px;
   top: 75%;
   left: 42%;
   transform: translate(-50%, -50%);
 }
 .hex17 {
   position: absolute;
-  width: 120px;
-  height: 120px;
   top: 75%;
   right: 42%;
   transform: translate(50%, -50%);
@@ -721,19 +697,7 @@ body#home .header-wrap {
         height: 180px;
     }*/
   }
-  .hex2 {
-    width: 140px;
-    height: 140px;
-  }
-  .hex4 {
-    width: 140px;
-    height: 140px;
-  }
-  .hex10 {
-    width: 140px;
-    height: 140px;
-  }
-  .hex12 {
+  .hex.hex-style1 {
     width: 140px;
     height: 140px;
   }
@@ -1425,7 +1389,6 @@ body#home .header-wrap {
 .footer .subscribe form {
   position: relative;
   max-width: 450px;
-  margin: auto;
 }
 .footer .subscribe form input {
   background-color: #fff;
@@ -1455,6 +1418,11 @@ body#home .header-wrap {
   font-size: 13px;
   line-height: 24px;
   letter-spacing: 0.25px;
+}
+@media (max-width: 768px) {
+  .footer .subscribe form {
+    margin: auto;
+  }
 }
 .footer .copyright {
   display: flex;

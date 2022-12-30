@@ -85,7 +85,6 @@
         form {
             position: relative;
             max-width: 450px;
-            margin: auto;
             input {
                 background-color: #fff;
                 border-radius: 8px;
@@ -114,6 +113,9 @@
                 font-size: 13px;
                 line-height: 24px;
                 letter-spacing: .25px;
+            }
+            @media(max-width:768px) {
+                margin: auto;
             }
         }
     }
