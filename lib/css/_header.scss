@@ -1,11 +1,12 @@
 body {
     .wrapper {
         background-color: #000000;
+        position: relative;
         &__main-menu {
             padding: 18px 16px;
             width: 56px;
             background-color: #000000;
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             height: 100%;
@@ -179,22 +180,103 @@ body {
         justify-content: space-between;
     }
     &__left-meta {
-        display: flex;
-        align-items: center;
-        .link-back {
-            width: 20px;
-            height: 20px;
-            background: #8492A6;
+        .menu {
             display: flex;
             align-items: center;
-            justify-content: center;
-            color: #200E32;
-            border-radius: 3px;
+            &>.menu__item {
+                margin-right: 20px;
+                position: relative;
+                &>a {
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 24px;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.75px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+                &::after {
+                    position: absolute;
+                    content: '';
+                    top: 90%;
+                    left: 0;
+                    width: 100%;
+                    height: 3px;
+                    background: radial-gradient(50% 50% at 50% 50%, #E82027 0%, #9B0207 100%);
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                &:hover {
+                    &::after {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+            li {
+                position: relative;
+                .sub__menu {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 26px 24px;
+                    gap: 16px;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    min-width: 170px;
+                    background-color: var(--gray-color);
+                    z-index: 1;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    opacity: 0;
+                    visibility: hidden;
+                    transform: translateY(50px);
+                    transition: all .3s linear;
+                    &>li {
+                        a {
+                            font-weight: 500;
+                            font-size: 13px;
+                            line-height: 16px;
+                            display: flex;
+                            align-items: center;
+                            color: #FFFFFF;
+                            &:hover {
+                                color: var(--orange-color);
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    .sub__menu {
+                        opacity: 1;
+                        visibility: visible;
+                        transform: translateY(0);
+                        transition: all .3s linear;
+                    }
+                }
+            }
+            &.is-opened {
+                display: none;
+            }
+            @media(max-width:991px) {
+                display: none;
+            }
         }
-        span {
-            color: #fff;
-            margin-left: 13px;
-        }
+        // .link-back {
+        //     width: 20px;
+        //     height: 20px;
+        //     background: #8492A6;
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: center;
+        //     color: #200E32;
+        //     border-radius: 3px;
+        // }
+        // span {
+        //     color: #fff;
+        //     margin-left: 13px;
+        // }
     }
     &__inner {
         display: flex;
@@ -204,8 +286,26 @@ body {
         &>li {
             padding: 0 15px;
             line-height: 32px;
-            &:not(:last-child) {
-                border-right: 1px solid #C2CEDB;
+            position: relative;
+            &:not(:first-child) {
+                // border-right: 1px solid #C2CEDB;
+                &::after {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translate(0, -50%);
+                    width: 1px;
+                    height: 70%;
+                    background-color: #fff;
+                    content: "";
+                    border-radius: 8px;
+                }
+            }
+            a {
+                color: currentColor;
+                &:hover {
+                    color: #C2CEDB;
+                }
             }
         }
         &-search {
@@ -256,6 +356,7 @@ body {
         }
         &-language {
             position: relative;
+            display: none;
             .language-selected {
                 cursor: pointer;
                 font-size: 13px;
@@ -340,6 +441,11 @@ body#home {
         &-wrap {
             justify-content: flex-end;
         }
+        &__inner {
+            &-language {
+                display: block;
+            }
+        }
     }
 }
 
@@ -369,6 +475,11 @@ body#home {
         left: 50%;
         transform: translate(-50%, -50%);
         transition: all .3s linear;
+        &>a {
+            color: currentColor;
+            width: 100%;
+            height: 100%;
+        }
         img {
             width: 30%;
         }
@@ -539,20 +650,28 @@ body#home {
         }
     }
     &2 {
-        position: absolute;
-        top: 20%;
-        left: 36%;
         // transform: translate(-50%, -50%);
+        opacity: 0;
+        visibility: hidden;
         &.animated {
+            position: absolute;
+            top: 20%;
+            left: 36%;
             animation: rotate1 .5s ease;
             transform: translate(-50%, -50%);
+            opacity: 1;
+            visibility: visible;
             @keyframes rotate1 {
                 0% {
+                    top: 35%;
+                    left: 50%;
                     transform: translate(100%, 40%);
                     opacity: 0;
                     visibility: hidden;
                 }
                 100% {
+                    top: 20%;
+                    left: 36%;
                     transform: translate(-50%, -50%);
                     opacity: 1;
                     visibility: visible;
@@ -561,11 +680,15 @@ body#home {
         }
     }
     &10 {
-        position: absolute;
-        top: 20%;
-        right: 36%;
+        opacity: 0;
+        visibility: hidden;
         // transform: translate(50%, -50%);
         &.animated {
+            position: absolute;
+            top: 20%;
+            right: 36%;
+            opacity: 1;
+            visibility: visible;
             animation: rotate2 .7s ease;
             transform: translate(50%, -50%);
             @keyframes rotate2 {
@@ -583,11 +706,14 @@ body#home {
         }
     }
     &3 {
-        position: absolute;
-        top: 35%;
-        left: 25%;
-        // transform: translate(-50%, -50%);
+        opacity: 0;
+        visibility: hidden;
         &.animated {
+            position: absolute;
+            top: 35%;
+            left: 25%;
+            opacity: 1;
+            visibility: visible;
             animation: rotate3 .5s ease;
             transform: translate(-50%, -50%);
             @keyframes rotate3 {
@@ -605,11 +731,14 @@ body#home {
         }
     }
     &11 {
-        position: absolute;
-        top: 35%;
-        right: 25%;
-        transform: translate(50%, -50%);
+        opacity: 0;
+        visibility: hidden;
         &.animated {
+            position: absolute;
+            top: 35%;
+            right: 25%;
+            opacity: 1;
+            visibility: visible;
             animation: rotate4 .7s ease;
             transform: translate(50%, -50%);
             @keyframes rotate4 {
@@ -627,11 +756,14 @@ body#home {
         }
     }
     &4 {
-        position: absolute;
-        top: 50%;
-        left: 36%;
-        // transform: translate(-50%, -50%);
+        opacity: 0;
+        visibility: hidden;
         &.animated {
+            position: absolute;
+            top: 50%;
+            left: 36%;
+            opacity: 1;
+            visibility: visible;
             animation: rotate5 .5s ease;
             transform: translate(-50%, -50%);
             @keyframes rotate5 {
@@ -649,11 +781,14 @@ body#home {
         }
     }
     &12 {
-        position: absolute;
-        top: 50%;
-        right: 36%;
-        // transform: translate(50%, -50%);
+        opacity: 0;
+        visibility: hidden;
         &.animated {
+            position: absolute;
+            top: 50%;
+            right: 36%;
+            opacity: 1;
+            visibility: visible;
             animation: rotate6 .7s ease;
             transform: translate(50%, -50%);
             @keyframes rotate6 {
@@ -671,11 +806,14 @@ body#home {
         }
     }
     &5 {
-        position: absolute;
-        top: 10%;
-        left: 25%;
-        // transform: translate(-50%, -50%);
+        opacity: 0;
+        visibility: hidden;
         &.animated {
+            position: absolute;
+            top: 10%;
+            left: 25%;
+            opacity: 1;
+            visibility: visible;
             animation: rotate7 .2s ease;
             transform: translate(-50%, -50%);
             @keyframes rotate7 {
@@ -693,11 +831,14 @@ body#home {
         }
     }
     &13 {
-        position: absolute;
-        top: 10%;
-        right: 25%;
-        // transform: translate(50%, -50%);
+        opacity: 0;
+        visibility: hidden;
         &.animated {
+            position: absolute;
+            top: 10%;
+            right: 25%;
+            opacity: 1;
+            visibility: visible;
             animation: rotate8 .2s ease;
             transform: translate(50%, -50%);
             @keyframes rotate8 {
@@ -715,11 +856,14 @@ body#home {
         }
     }
     &6 {
-        position: absolute;
-        top: 20%;
-        left: 16%;
-        // transform: translate(-50%, -50%);
+        opacity: 0;
+        visibility: hidden;
         &.animated {
+            position: absolute;
+            top: 20%;
+            left: 16%;
+            opacity: 1;
+            visibility: visible;
             animation: rotate9 .2s ease;
             transform: translate(-50%, -50%);
             @keyframes rotate9 {
@@ -737,11 +881,14 @@ body#home {
         }
     }
     &14 {
-        position: absolute;
-        top: 20%;
-        right: 16%;
-        // transform: translate(50%, -50%);
+        opacity: 0;
+        visibility: hidden;
         &.animated {
+            position: absolute;
+            top: 20%;
+            right: 16%;
+            opacity: 1;
+            visibility: visible;
             animation: rotate10 .2s ease;
             transform: translate(50%, -50%);
             @keyframes rotate10 {
@@ -759,11 +906,14 @@ body#home {
         }
     }
     &7 {
-        position: absolute;
-        top: 60%;
-        left: 25%;
-        // transform: translate(-50%, -50%);
+        opacity: 0;
+        visibility: hidden;
         &.animated {
+            position: absolute;
+            top: 60%;
+            left: 25%;
+            opacity: 1;
+            visibility: visible;
             animation: rotate11 .2s ease;
             transform: translate(-50%, -50%);
             @keyframes rotate11 {
@@ -781,11 +931,14 @@ body#home {
         }
     }
     &15 {
-        position: absolute;
-        top: 60%;
-        right: 25%;
-        // transform: translate(50%, -50%);
+        opacity: 0;
+        visibility: hidden;
         &.animated {
+            position: absolute;
+            top: 60%;
+            right: 25%;
+            opacity: 1;
+            visibility: visible;
             animation: rotate12 .2s ease;
             transform: translate(50%, -50%);
             @keyframes rotate12 {
@@ -803,11 +956,14 @@ body#home {
         }
     }
     &8 {
-        position: absolute;
-        top: 75%;
-        left: 32%;
-        // transform: translate(-50%, -50%);
+        opacity: 0;
+        visibility: hidden;
         &.animated {
+            position: absolute;
+            top: 75%;
+            left: 32%;
+            opacity: 1;
+            visibility: visible;
             animation: rotate13 .2s ease;
             transform: translate(-50%, -50%);
             @keyframes rotate13 {
@@ -825,11 +981,14 @@ body#home {
         }
     }
     &16 {
-        position: absolute;
-        top: 75%;
-        right: 32%;
-        // transform: translate(50%, -50%);
+        opacity: 0;
+        visibility: hidden;
         &.animated {
+            position: absolute;
+            top: 75%;
+            right: 32%;
+            opacity: 1;
+            visibility: visible;
             animation: rotate14 .2s ease;
             transform: translate(50%, -50%);
             @keyframes rotate14 {
@@ -847,11 +1006,14 @@ body#home {
         }
     }
     &9 {
-        position: absolute;
-        top: 75%;
-        left: 42%;
-        // transform: translate(-50%, -50%);
+        opacity: 0;
+        visibility: hidden;
         &.animated {
+            position: absolute;
+            top: 75%;
+            left: 42%;
+            opacity: 1;
+            visibility: visible;
             animation: rotate15 .7s ease;
             transform: translate(-50%, -50%);
             @keyframes rotate15 {
@@ -869,11 +1031,14 @@ body#home {
         }
     }
     &17 {
-        position: absolute;
-        top: 75%;
-        right: 42%;
-        // transform: translate(50%, -50%);
+        opacity: 0;
+        visibility: hidden;
         &.animated {
+            position: absolute;
+            top: 75%;
+            right: 42%;
+            opacity: 1;
+            visibility: visible;
             animation: rotate16 .7s ease;
             transform: translate(50%, -50%);
             @keyframes rotate16 {
