@@ -12,6 +12,7 @@ body .wrapper__main-menu {
   left: 0;
   height: 100%;
   z-index: 2;
+  border-right: 1px solid #8492A6;
 }
 body .wrapper__main-menu .lost__logo {
   position: absolute;
@@ -396,9 +397,6 @@ body#home .wrapper {
   height: 100vh;
   position: relative;
 }
-body#home .wrapper__main-menu {
-  border-right: 1px solid #8492A6;
-}
 body#home .wrapper__inner header__inner {
   padding: 18px 48px !important;
 }
@@ -650,7 +648,7 @@ body#home .header__inner-language {
   right: 36%;
   opacity: 1;
   visibility: visible;
-  animation: rotate2 0.7s ease;
+  animation: rotate2 0.5s ease;
   transform: translate(50%, -50%);
 }
 @keyframes rotate2 {
@@ -1146,26 +1144,80 @@ body#home .header__inner-language {
   }
 }
 @media (max-width: 1380px) {
-  .hex.hex-style2 {
-    display: none;
-  }
   .hex1.animated {
     top: 50%;
+    width: 250px;
+    height: 250px;
+  }
+  .hex2.animated {
+    top: 20%;
+    left: 40%;
+  }
+  .hex10.animated {
+    top: 20%;
+    right: 40%;
   }
   .hex3.animated {
     top: 50%;
-  }
-  .hex4.animated {
-    top: 80%;
+    left: 32%;
   }
   .hex11.animated {
     top: 50%;
+    right: 32%;
+  }
+  .hex4.animated {
+    top: 80%;
+    left: 40%;
   }
   .hex12.animated {
     top: 80%;
+    right: 40%;
+  }
+  .hex5.animated {
+    top: 10%;
+    left: 30%;
+  }
+  .hex13.animated {
+    top: 10%;
+    right: 30%;
+  }
+  .hex6.animated {
+    top: 30%;
+    left: 24%;
+  }
+  .hex14.animated {
+    top: 30%;
+    right: 24%;
+  }
+  .hex7.animated {
+    top: 50%;
+    left: 18%;
+  }
+  .hex15.animated {
+    top: 50%;
+    right: 18%;
+  }
+  .hex8.animated {
+    top: 70%;
+    left: 24%;
+  }
+  .hex16.animated {
+    top: 70%;
+    right: 24%;
+  }
+  .hex9.animated {
+    top: 90%;
+    left: 30%;
+  }
+  .hex17.animated {
+    top: 90%;
+    right: 30%;
   }
 }
 @media (max-width: 991px) {
+  .hex.hex-style2 {
+    display: none;
+  }
   .hex1.animated {
     top: 20%;
     width: 240px;
@@ -1173,15 +1225,23 @@ body#home .header__inner-language {
   }
   .hex2.animated {
     top: 53%;
+    left: 30%;
   }
   .hex10.animated {
     top: 53%;
+    right: 30%;
   }
   .hex3 {
     display: none;
   }
   .hex11 {
     display: none;
+  }
+  .hex4.animated {
+    left: 30%;
+  }
+  .hex12.animated {
+    right: 30%;
   }
 }
 @media (max-width: 767.98px) {
