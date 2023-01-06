@@ -638,31 +638,6 @@ body#home .header__inner-language {
     visibility: visible;
   }
 }
-.hex10 {
-  opacity: 0;
-  visibility: hidden;
-}
-.hex10.animated {
-  position: absolute;
-  top: 20%;
-  right: 36%;
-  opacity: 1;
-  visibility: visible;
-  animation: rotate2 0.5s ease;
-  transform: translate(50%, -50%);
-}
-@keyframes rotate2 {
-  0% {
-    transform: translate(-100%, 40%);
-    opacity: 0;
-    visibility: hidden;
-  }
-  100% {
-    transform: translate(50%, -50%);
-    opacity: 1;
-    visibility: visible;
-  }
-}
 .hex3 {
   opacity: 0;
   visibility: hidden;
@@ -684,31 +659,6 @@ body#home .header__inner-language {
   }
   100% {
     transform: translate(-50%, -50%);
-    opacity: 1;
-    visibility: visible;
-  }
-}
-.hex11 {
-  opacity: 0;
-  visibility: hidden;
-}
-.hex11.animated {
-  position: absolute;
-  top: 35%;
-  right: 25%;
-  opacity: 1;
-  visibility: visible;
-  animation: rotate4 0.7s ease;
-  transform: translate(50%, -50%);
-}
-@keyframes rotate4 {
-  0% {
-    transform: translate(-230%, 50%);
-    opacity: 0;
-    visibility: hidden;
-  }
-  100% {
-    transform: translate(50%, -50%);
     opacity: 1;
     visibility: visible;
   }
@@ -738,11 +688,61 @@ body#home .header__inner-language {
     visibility: visible;
   }
 }
-.hex12 {
+.hex5 {
   opacity: 0;
   visibility: hidden;
 }
-.hex12.animated {
+.hex5.animated {
+  position: absolute;
+  top: 20%;
+  right: 36%;
+  opacity: 1;
+  visibility: visible;
+  animation: rotate2 0.5s ease;
+  transform: translate(50%, -50%);
+}
+@keyframes rotate2 {
+  0% {
+    transform: translate(-100%, 40%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: translate(50%, -50%);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.hex6 {
+  opacity: 0;
+  visibility: hidden;
+}
+.hex6.animated {
+  position: absolute;
+  top: 35%;
+  right: 25%;
+  opacity: 1;
+  visibility: visible;
+  animation: rotate4 0.7s ease;
+  transform: translate(50%, -50%);
+}
+@keyframes rotate4 {
+  0% {
+    transform: translate(-230%, 50%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: translate(50%, -50%);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.hex7 {
+  opacity: 0;
+  visibility: hidden;
+}
+.hex7.animated {
   position: absolute;
   top: 50%;
   right: 36%;
@@ -763,11 +763,11 @@ body#home .header__inner-language {
     visibility: visible;
   }
 }
-.hex5 {
+.hex8 {
   opacity: 0;
   visibility: hidden;
 }
-.hex5.animated {
+.hex8.animated {
   position: absolute;
   top: 10%;
   left: 25%;
@@ -788,36 +788,11 @@ body#home .header__inner-language {
     visibility: visible;
   }
 }
-.hex13 {
+.hex9 {
   opacity: 0;
   visibility: hidden;
 }
-.hex13.animated {
-  position: absolute;
-  top: 10%;
-  right: 25%;
-  opacity: 1;
-  visibility: visible;
-  animation: rotate8 0.2s ease;
-  transform: translate(50%, -50%);
-}
-@keyframes rotate8 {
-  0% {
-    transform: translate(-350%, 170%);
-    opacity: 0;
-    visibility: hidden;
-  }
-  100% {
-    transform: translate(50%, -50%);
-    opacity: 1;
-    visibility: visible;
-  }
-}
-.hex6 {
-  opacity: 0;
-  visibility: hidden;
-}
-.hex6.animated {
+.hex9.animated {
   position: absolute;
   top: 20%;
   left: 16%;
@@ -838,36 +813,11 @@ body#home .header__inner-language {
     visibility: visible;
   }
 }
-.hex14 {
+.hex10 {
   opacity: 0;
   visibility: hidden;
 }
-.hex14.animated {
-  position: absolute;
-  top: 20%;
-  right: 16%;
-  opacity: 1;
-  visibility: visible;
-  animation: rotate10 0.2s ease;
-  transform: translate(50%, -50%);
-}
-@keyframes rotate10 {
-  0% {
-    transform: translate(-500%, 85%);
-    opacity: 0;
-    visibility: hidden;
-  }
-  100% {
-    transform: translate(50%, -50%);
-    opacity: 1;
-    visibility: visible;
-  }
-}
-.hex7 {
-  opacity: 0;
-  visibility: hidden;
-}
-.hex7.animated {
+.hex10.animated {
   position: absolute;
   top: 60%;
   left: 25%;
@@ -884,6 +834,106 @@ body#home .header__inner-language {
   }
   100% {
     transform: translate(-50%, -50%);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.hex11 {
+  opacity: 0;
+  visibility: hidden;
+}
+.hex11.animated {
+  position: absolute;
+  top: 75%;
+  left: 32%;
+  opacity: 1;
+  visibility: visible;
+  animation: rotate13 0.2s ease;
+  transform: translate(-50%, -50%);
+}
+@keyframes rotate13 {
+  0% {
+    transform: translate(240%, -400%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.hex12 {
+  opacity: 0;
+  visibility: hidden;
+}
+.hex12.animated {
+  position: absolute;
+  top: 75%;
+  left: 42%;
+  opacity: 1;
+  visibility: visible;
+  animation: rotate15 0.7s ease;
+  transform: translate(-50%, -50%);
+}
+@keyframes rotate15 {
+  0% {
+    transform: translate(80%, -400%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.hex13 {
+  opacity: 0;
+  visibility: hidden;
+}
+.hex13.animated {
+  position: absolute;
+  top: 75%;
+  right: 42%;
+  opacity: 1;
+  visibility: visible;
+  animation: rotate16 0.7s ease;
+  transform: translate(50%, -50%);
+}
+@keyframes rotate16 {
+  0% {
+    transform: translate(-80%, -400%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: translate(50%, -50%);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.hex14 {
+  opacity: 0;
+  visibility: hidden;
+}
+.hex14.animated {
+  position: absolute;
+  top: 75%;
+  right: 32%;
+  opacity: 1;
+  visibility: visible;
+  animation: rotate14 0.2s ease;
+  transform: translate(50%, -50%);
+}
+@keyframes rotate14 {
+  0% {
+    transform: translate(-240%, -400%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: translate(50%, -50%);
     opacity: 1;
     visibility: visible;
   }
@@ -913,77 +963,27 @@ body#home .header__inner-language {
     visibility: visible;
   }
 }
-.hex8 {
-  opacity: 0;
-  visibility: hidden;
-}
-.hex8.animated {
-  position: absolute;
-  top: 75%;
-  left: 32%;
-  opacity: 1;
-  visibility: visible;
-  animation: rotate13 0.2s ease;
-  transform: translate(-50%, -50%);
-}
-@keyframes rotate13 {
-  0% {
-    transform: translate(240%, -400%);
-    opacity: 0;
-    visibility: hidden;
-  }
-  100% {
-    transform: translate(-50%, -50%);
-    opacity: 1;
-    visibility: visible;
-  }
-}
 .hex16 {
   opacity: 0;
   visibility: hidden;
 }
 .hex16.animated {
   position: absolute;
-  top: 75%;
-  right: 32%;
+  top: 20%;
+  right: 16%;
   opacity: 1;
   visibility: visible;
-  animation: rotate14 0.2s ease;
+  animation: rotate10 0.2s ease;
   transform: translate(50%, -50%);
 }
-@keyframes rotate14 {
+@keyframes rotate10 {
   0% {
-    transform: translate(-240%, -400%);
+    transform: translate(-500%, 85%);
     opacity: 0;
     visibility: hidden;
   }
   100% {
     transform: translate(50%, -50%);
-    opacity: 1;
-    visibility: visible;
-  }
-}
-.hex9 {
-  opacity: 0;
-  visibility: hidden;
-}
-.hex9.animated {
-  position: absolute;
-  top: 75%;
-  left: 42%;
-  opacity: 1;
-  visibility: visible;
-  animation: rotate15 0.7s ease;
-  transform: translate(-50%, -50%);
-}
-@keyframes rotate15 {
-  0% {
-    transform: translate(80%, -400%);
-    opacity: 0;
-    visibility: hidden;
-  }
-  100% {
-    transform: translate(-50%, -50%);
     opacity: 1;
     visibility: visible;
   }
@@ -994,16 +994,16 @@ body#home .header__inner-language {
 }
 .hex17.animated {
   position: absolute;
-  top: 75%;
-  right: 42%;
+  top: 10%;
+  right: 25%;
   opacity: 1;
   visibility: visible;
-  animation: rotate16 0.7s ease;
+  animation: rotate8 0.2s ease;
   transform: translate(50%, -50%);
 }
-@keyframes rotate16 {
+@keyframes rotate8 {
   0% {
-    transform: translate(-80%, -400%);
+    transform: translate(-350%, 170%);
     opacity: 0;
     visibility: hidden;
   }
@@ -1022,28 +1022,12 @@ body#home .header__inner-language {
     left: 33%;
     top: 20%;
   }
-  .hex10 {
-    top: 35%;
-    right: 50%;
-  }
-  .hex10.animated {
-    right: 33%;
-    top: 20%;
-  }
   .hex3 {
     top: 35%;
     left: 50%;
   }
   .hex3.animated {
     left: 22%;
-    top: 35%;
-  }
-  .hex11 {
-    top: 35%;
-    right: 50%;
-  }
-  .hex11.animated {
-    right: 22%;
     top: 35%;
   }
   .hex4 {
@@ -1054,53 +1038,85 @@ body#home .header__inner-language {
     left: 33%;
     top: 50%;
   }
-  .hex12 {
+  .hex5 {
     top: 35%;
     right: 50%;
   }
-  .hex12.animated {
+  .hex5.animated {
     right: 33%;
     top: 50%;
   }
-  .hex5 {
+  .hex6 {
+    top: 35%;
+    right: 50%;
+  }
+  .hex6.animated {
+    right: 22%;
+    top: 35%;
+  }
+  .hex7 {
+    top: 35%;
+    right: 50%;
+  }
+  .hex7.animated {
+    right: 33%;
+    top: 20%;
+  }
+  .hex8 {
     top: 35%;
     left: 50%;
   }
-  .hex5.animated {
+  .hex8.animated {
     left: 22%;
     top: 10%;
+  }
+  .hex9 {
+    top: 35%;
+    left: 50%;
+  }
+  .hex9.animated {
+    left: 13%;
+    top: 20%;
+  }
+  .hex10 {
+    top: 35%;
+    left: 50%;
+  }
+  .hex10.animated {
+    left: 22%;
+    top: 60%;
+  }
+  .hex11 {
+    top: 35%;
+    left: 50%;
+  }
+  .hex11.animated {
+    left: 30%;
+    top: 75%;
+  }
+  .hex12 {
+    top: 35%;
+    left: 50%;
+  }
+  .hex12.animated {
+    left: 40%;
+    top: 75%;
   }
   .hex13 {
     top: 35%;
     right: 50%;
   }
   .hex13.animated {
-    right: 22%;
-    top: 10%;
-  }
-  .hex6 {
-    top: 35%;
-    left: 50%;
-  }
-  .hex6.animated {
-    left: 13%;
-    top: 20%;
+    right: 40%;
+    top: 75%;
   }
   .hex14 {
     top: 35%;
     right: 50%;
   }
   .hex14.animated {
-    right: 13%;
-    top: 20%;
-  }
-  .hex7 {
-    top: 35%;
-    left: 50%;
-  }
-  .hex7.animated {
-    left: 22%;
-    top: 60%;
+    right: 30%;
+    top: 75%;
   }
   .hex15 {
     top: 35%;
@@ -1110,37 +1126,21 @@ body#home .header__inner-language {
     right: 22%;
     top: 60%;
   }
-  .hex8 {
-    top: 35%;
-    left: 50%;
-  }
-  .hex8.animated {
-    left: 28%;
-    top: 75%;
-  }
   .hex16 {
     top: 35%;
     right: 50%;
   }
   .hex16.animated {
-    right: 28%;
-    top: 75%;
-  }
-  .hex9 {
-    top: 35%;
-    left: 50%;
-  }
-  .hex9.animated {
-    left: 38%;
-    top: 75%;
+    right: 13%;
+    top: 20%;
   }
   .hex17 {
     top: 35%;
     right: 50%;
   }
   .hex17.animated {
-    right: 38%;
-    top: 75%;
+    right: 22%;
+    top: 10%;
   }
 }
 @media (max-width: 1380px) {
@@ -1150,68 +1150,68 @@ body#home .header__inner-language {
     height: 250px;
   }
   .hex2.animated {
-    top: 20%;
-    left: 40%;
-  }
-  .hex10.animated {
-    top: 20%;
-    right: 40%;
+    top: 30%;
+    left: 35%;
   }
   .hex3.animated {
     top: 50%;
-    left: 32%;
-  }
-  .hex11.animated {
-    top: 50%;
-    right: 32%;
+    left: 23%;
   }
   .hex4.animated {
-    top: 80%;
-    left: 40%;
-  }
-  .hex12.animated {
-    top: 80%;
-    right: 40%;
+    top: 70%;
+    left: 35%;
   }
   .hex5.animated {
-    top: 10%;
-    left: 30%;
-  }
-  .hex13.animated {
-    top: 10%;
-    right: 30%;
+    top: 70%;
+    right: 35%;
   }
   .hex6.animated {
-    top: 30%;
-    left: 24%;
-  }
-  .hex14.animated {
-    top: 30%;
-    right: 24%;
+    top: 50%;
+    right: 23%;
   }
   .hex7.animated {
-    top: 50%;
-    left: 18%;
-  }
-  .hex15.animated {
-    top: 50%;
-    right: 18%;
+    top: 30%;
+    right: 35%;
   }
   .hex8.animated {
-    top: 70%;
-    left: 24%;
-  }
-  .hex16.animated {
-    top: 70%;
-    right: 24%;
+    top: 7%;
+    left: 35%;
   }
   .hex9.animated {
-    top: 90%;
-    left: 30%;
+    top: 18%;
+    left: 23%;
+  }
+  .hex10.animated {
+    top: 30%;
+    left: 13%;
+  }
+  .hex11.animated {
+    top: 70%;
+    left: 13%;
+  }
+  .hex12.animated {
+    top: 83%;
+    left: 23%;
+  }
+  .hex13.animated {
+    top: 83%;
+    right: 23%;
+  }
+  .hex14.animated {
+    top: 70%;
+    right: 13%;
+  }
+  .hex15.animated {
+    top: 30%;
+    right: 13%;
+  }
+  .hex16.animated {
+    top: 18%;
+    right: 23%;
   }
   .hex17.animated {
-    top: 90%;
-    right: 30%;
+    top: 7%;
+    right: 35%;
   }
 }
 @media (max-width: 991px) {
@@ -1223,24 +1223,23 @@ body#home .header__inner-language {
     width: 240px;
     height: 240px;
   }
+  .hex4, .hex5 {
+    display: none;
+  }
   .hex2.animated {
     top: 53%;
     left: 30%;
   }
-  .hex10.animated {
-    top: 53%;
-    right: 30%;
-  }
-  .hex3 {
-    display: none;
-  }
-  .hex11 {
-    display: none;
-  }
-  .hex4.animated {
+  .hex3.animated {
+    top: 80%;
     left: 30%;
   }
-  .hex12.animated {
+  .hex6.animated {
+    top: 80%;
+    right: 30%;
+  }
+  .hex7.animated {
+    top: 53%;
     right: 30%;
   }
 }
@@ -1263,13 +1262,13 @@ body#home .header__inner-language {
   .hex2.animated {
     left: 25%;
   }
-  .hex4.animated {
+  .hex3.animated {
     left: 25%;
   }
-  .hex10.animated {
+  .hex6.animated {
     right: 25%;
   }
-  .hex12.animated {
+  .hex7.animated {
     right: 25%;
   }
 }
