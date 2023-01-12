@@ -569,8 +569,8 @@ body#home {
 .hex {
     &1 {
         position: absolute;
-        width: 270px;
-        height: 270px;
+        // width: 270px;
+        // height: 270px;
         top: 35%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -614,39 +614,39 @@ body#home {
                 display: block;
             }
         }
-        @media(min-width:1600px) {
-            width: 300px;
-            height: 300px;
-        }
-        @media(min-width:1800px) {
-            width: 400px;
-            height: 400px;
-        }
+        // @media(min-width:1600px) {
+        //     width: 300px;
+        //     height: 300px;
+        // }
+        // @media(min-width:1800px) {
+        //     width: 400px;
+        //     height: 400px;
+        // }
     }
-    &.hex-style1 {
-        width: 175px;
-        height: 175px;
-        @media(min-width: 1600px) {
-            width: 200px;
-            height: 200px;
-        }
-        @media(min-width: 1800px) {
-            width: 300px;
-            height: 300px;
-        }
-    }
-    &.hex-style2 {
-        width: 120px;
-        height: 120px;
-        @media(min-width: 1600px) {
-            width: 150px;
-            height: 150px;
-        }
-        @media(min-width: 1800px) {
-            width: 200px;
-            height: 200px;
-        }
-    }
+    // &.hex-style1 {
+    //     width: 175px;
+    //     height: 175px;
+    //     @media(min-width: 1600px) {
+    //         width: 200px;
+    //         height: 200px;
+    //     }
+    //     @media(min-width: 1800px) {
+    //         width: 300px;
+    //         height: 300px;
+    //     }
+    // }
+    // &.hex-style2 {
+    //     width: 120px;
+    //     height: 120px;
+    //     @media(min-width: 1600px) {
+    //         width: 150px;
+    //         height: 150px;
+    //     }
+    //     @media(min-width: 1800px) {
+    //         width: 200px;
+    //         height: 200px;
+    //     }
+    // }
     &2 {
         opacity: 0;
         visibility: hidden;
@@ -1199,7 +1199,7 @@ body#home {
         // }
         &1 {
             &.animated {
-                top: 50%;
+                top: 40%;
                 width: 250px;
                 height: 250px;
             }
@@ -1208,7 +1208,7 @@ body#home {
             &.animated {
                 // top: 20%;
                 // left: 40%;
-                top: 30%;
+                top: 25%;
                 left: 35%;
             }
         }
@@ -1216,7 +1216,7 @@ body#home {
             &.animated {
                 // top: 50%;
                 // left: 32%;
-                top: 50%;
+                top: 40%;
                 left: 23%;
             }
         }
@@ -1224,7 +1224,7 @@ body#home {
             &.animated {
                 // top: 80%;
                 // left: 40%;
-                top: 70%;
+                top: 55%;
                 left: 35%;
             }
         }
@@ -1232,7 +1232,7 @@ body#home {
             &.animated {
                 // top: 80%;
                 // right: 40%;
-                top: 70%;
+                top: 55%;
                 right: 35%;
             }
         }
@@ -1240,7 +1240,7 @@ body#home {
             &.animated {
                 // top: 50%;
                 // right: 32%;
-                top: 50%;
+                top: 40%;
                 right: 23%;
             }
         }
@@ -1248,88 +1248,87 @@ body#home {
             &.animated {
                 // top: 20%;
                 // right: 40%;
-                top: 30%;
+                top: 25%;
                 right: 35%;
             }
         }
         &8 {
             &.animated {
-                // top: 10%;
-                // left: 30%;
-                top: 7%;
-                left: 35%;
+                // top: 30%;
+                // left: 24%;
+                top: 15%;
+                left: 25%;
             }
         }
         &9 {
             &.animated {
-                // top: 30%;
-                // left: 24%;
-                top: 18%;
-                left: 23%;
+                // top: 50%;
+                // left: 18%;
+                top: 20%;
+                left: 15%;
             }
         }
         &10 {
             &.animated {
-                // top: 50%;
-                // left: 18%;
-                top: 30%;
-                left: 13%;
+                // top: 70%;
+                // left: 24%;
+                top: 65%;
+                left: 23%;
             }
         }
         &11 {
             &.animated {
-                // top: 70%;
-                // left: 24%;
-                top: 70%;
-                left: 13%;
+                // top: 90%;
+                // left: 30%;
+                top: 80%;
+                left: 30%;
             }
         }
         &12 {
             &.animated {
                 // top: 90%;
-                // left: 30%;
-                top: 83%;
-                left: 23%;
+                // right: 30%;
+                top: 80%;
+                left: 40%;
             }
         }
         &13 {
             &.animated {
-                // top: 90%;
-                // right: 30%;
-                top: 83%;
-                right: 23%;
+                // top: 70%;
+                // right: 24%;
+                top: 80%;
+                right: 40%;
             }
         }
         &14 {
             &.animated {
-                // top: 70%;
-                // right: 24%;
-                top: 70%;
-                right: 13%;
+                top: 80%;
+                right: 30%;
             }
         }
         &15 {
             &.animated {
                 // top: 50%;
                 // right: 18%;
-                top: 30%;
-                right: 13%;
+                top: 65%;
+                right: 23%;
             }
         }
         &16 {
             &.animated {
                 // top: 30%;
                 // right: 24%;
-                top: 18%;
-                right: 23%;
+                top: 20%;
+                right: 15%;
             }
         }
         &17 {
             &.animated {
                 // top: 10%;
                 // right: 30%;
-                top: 7%;
-                right: 35%;
+                // top: 7%;
+                top: 15%;
+                right: 25%;
             }
         }
     }
@@ -1420,4 +1419,87 @@ body#home {
             height: 120px;
         }
     }
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: var(--gray2-color);
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+    border: 0;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 400;
+    color: #D3DCE6;
+}
+
+
+/* Dropdown button on hover & focus */
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: transparent;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    background-color: var(--gray-color);
+    min-width: 125px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+}
+
+.dropdown-content a:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.dropdown-content a:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.dropdown-content a:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: var(--orange-color);
+}
+
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
+.show {
+    display: block;
 }

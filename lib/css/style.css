@@ -523,8 +523,6 @@ body#home .header__inner-language {
 
 .hex1 {
   position: absolute;
-  width: 270px;
-  height: 270px;
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -564,50 +562,6 @@ body#home .header__inner-language {
 }
 .hex1 .hexagon__text-desc {
   display: block;
-}
-@media (min-width: 1600px) {
-  .hex1 {
-    width: 300px;
-    height: 300px;
-  }
-}
-@media (min-width: 1800px) {
-  .hex1 {
-    width: 400px;
-    height: 400px;
-  }
-}
-.hex.hex-style1 {
-  width: 175px;
-  height: 175px;
-}
-@media (min-width: 1600px) {
-  .hex.hex-style1 {
-    width: 200px;
-    height: 200px;
-  }
-}
-@media (min-width: 1800px) {
-  .hex.hex-style1 {
-    width: 300px;
-    height: 300px;
-  }
-}
-.hex.hex-style2 {
-  width: 120px;
-  height: 120px;
-}
-@media (min-width: 1600px) {
-  .hex.hex-style2 {
-    width: 150px;
-    height: 150px;
-  }
-}
-@media (min-width: 1800px) {
-  .hex.hex-style2 {
-    width: 200px;
-    height: 200px;
-  }
 }
 .hex2 {
   opacity: 0;
@@ -1145,73 +1099,73 @@ body#home .header__inner-language {
 }
 @media (max-width: 1380px) {
   .hex1.animated {
-    top: 50%;
+    top: 40%;
     width: 250px;
     height: 250px;
   }
   .hex2.animated {
-    top: 30%;
+    top: 25%;
     left: 35%;
   }
   .hex3.animated {
-    top: 50%;
+    top: 40%;
     left: 23%;
   }
   .hex4.animated {
-    top: 70%;
+    top: 55%;
     left: 35%;
   }
   .hex5.animated {
-    top: 70%;
+    top: 55%;
     right: 35%;
   }
   .hex6.animated {
-    top: 50%;
+    top: 40%;
     right: 23%;
   }
   .hex7.animated {
-    top: 30%;
+    top: 25%;
     right: 35%;
   }
   .hex8.animated {
-    top: 7%;
-    left: 35%;
+    top: 15%;
+    left: 25%;
   }
   .hex9.animated {
-    top: 18%;
-    left: 23%;
+    top: 20%;
+    left: 15%;
   }
   .hex10.animated {
-    top: 30%;
-    left: 13%;
-  }
-  .hex11.animated {
-    top: 70%;
-    left: 13%;
-  }
-  .hex12.animated {
-    top: 83%;
+    top: 65%;
     left: 23%;
   }
+  .hex11.animated {
+    top: 80%;
+    left: 30%;
+  }
+  .hex12.animated {
+    top: 80%;
+    left: 40%;
+  }
   .hex13.animated {
-    top: 83%;
-    right: 23%;
+    top: 80%;
+    right: 40%;
   }
   .hex14.animated {
-    top: 70%;
-    right: 13%;
+    top: 80%;
+    right: 30%;
   }
   .hex15.animated {
-    top: 30%;
-    right: 13%;
-  }
-  .hex16.animated {
-    top: 18%;
+    top: 65%;
     right: 23%;
   }
+  .hex16.animated {
+    top: 20%;
+    right: 15%;
+  }
   .hex17.animated {
-    top: 7%;
-    right: 35%;
+    top: 15%;
+    right: 25%;
   }
 }
 @media (max-width: 991px) {
@@ -1277,6 +1231,77 @@ body#home .header__inner-language {
     width: 120px;
     height: 120px;
   }
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: var(--gray2-color);
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  border: 0;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 400;
+  color: #D3DCE6;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: transparent;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  background-color: var(--gray-color);
+  min-width: 125px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 4px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+}
+
+.dropdown-content a:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.dropdown-content a:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.dropdown-content a:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: var(--orange-color);
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
 }
 
 .news__inner {
